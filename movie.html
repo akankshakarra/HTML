@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKING MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+nav{
+    width: 100%;
+    height: 80px;
+
+}
+nav ul {
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: right;
+  border-right:1px solid #bbb;
+}
+.logo img{
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 32px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+<div class="logo"><a href="#"><img src="logo.png" width="150" height="80"></a></div>
+<nav>
+<ul>
+  <li><a href="contact_us.html">CONTACT</a></li>
+  <li><a href="about_us.html">ABOUT US</a></li>
+  <li><a href="book.html">BOOK NOW</a></li>
+  <li><a href="current.html">CURRENT MOVIES</a></li>
+  <li><a class="active" href="#home">HOME</a></li>
+</ul>
+</nav>
+<div class="slidershow middle">
+    <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2" checked>
+        <input type="radio" name="r" id="r3" checked>
+    <div class="slide s1">
+    <img src="1.jpg" alt="">
+    </div>
+    <div class="slide">
+    <img src="2.jpg" alt="">
+    </div>
+    <div class="slide">
+    <img src="3.jpg" alt="">
+    </div>
+    </div>
+    <div class="navigation">
+    <label for="r1" class="bar"></label>
+    <label for="r2" class="bar"></label>
+    <label for="r3" class="bar"></label>
+    </div>
+    </div>
+</body>
+</html>

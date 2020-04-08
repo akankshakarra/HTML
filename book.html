@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+<title>Book Ticket</title>
+
+</head>
+<style>
+	.l1{
+		height:700px;
+		width:1344px;
+		clear:both;
+		text-align:center;
+		color: white;
+	}
+	fieldset{
+		width:100%px;
+		height:680px;
+		align:center;
+	}
+	legend{
+font-size:20px;
+}
+			
+.error{
+	color:red;
+		font-size:15px;
+}
+
+input[type=text]
+{
+	width:200px;
+	padding:10px;
+}
+input[type=password]
+{
+	margin:2px;
+	width:200px;
+	padding:10px;
+	
+}
+input[type=number]
+{
+	margin:2px;
+	width:200px;
+	padding:10px;
+	
+}
+input[type=submit]
+{
+	width:20%;
+	font-size:1.5em;
+	padding:10px;
+	margin:5px;	
+}
+input[id=extra]
+{
+	width:20%;
+	font-size:1.5em;
+	padding:10px;	
+}
+
+.success{	
+	color:green;
+	padding:25px;
+	text-align:center;
+	font-size:20px;
+}
+form fieldset a{
+	width:50px;
+	height:50px;
+	padding:10px;
+	
+}
+</style>
+<body background="hall.jpg"> 
+
+<div class="l1">
+<form id="form" action="" method="post">	
+			<fieldset>
+				<legend>TICKET BOOKING SYSTEM</legend>	<br><br>			
+				<label> Your Name: 
+					<input id="name1" type="text" name="username">			
+				</label>
+				<label> Surname : 
+					<input id="name2" type="text" name="username">			
+				</label>	<br><br>
+				<label> Location : 
+					<input id="address" type="text" name="address">			
+				</label><br><br>
+				<label> Contact : 
+					<input id="phone" type="number" name="Phone">			
+				</label><br><br>
+			<label> Email Address : 
+					<input id="email" type="text" name="email">			
+				</label><br><br>
+				<label for="ex">Movie : </label>
+					<select id="movie" name="level" >
+					<option value="">Select a Movie</option>
+					<option value="fro">FROZEN</option>
+					<option value="harry">HARRY POTTER</option>
+					<option value="hsg">HIGH SCHOOL MUSICAL</option>
+					
+					</select>
+				<label for="ext">Seat: </label>
+					<select id="seat" name="level" >
+					<option value="">Select a Quantity</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+					</select>
+					<label for="ext">Show Time: </label>
+					<select id="showtime" name="level" >
+					<option value="">Select a Time</option>
+					<option value="1">8:00AM</option>
+					<option value="2">12:00PM</option>
+					<option value="3">3:00PM</option>
+					
+					</select>
+					<br><br>
+				<p>Payment:
+<label>
+<input id="radio1" type="radio" name="payment" value="yes"/> card
+</label>
+
+<input id="radio" type="radio" name="payment" value="noo"/> Cash on Book
+</label><br>
+</p>
+<br>
+			<label> ID : 
+					<input id="card" type="number" name="card">			
+				</label><br>
+			<label> Amount : 
+					<input id="amount" type="number" name="amount">			
+				</label><br>
+				<input type="submit" value="Book Now" />
+				<br />
+				<p id="errorMessage" class="error">					
+				</p>	
+			</fieldset>			
+		</form>
+		<p id="successMessage" class="success">					
+		</p>
+				
+</div>
+</div>
+
+				<p>Copy Right &copy; Protected</p>
+				</center>
+  </div>
+</div>
+</body>
+</html>
