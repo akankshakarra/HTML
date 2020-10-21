@@ -1,14 +1,103 @@
 <!Doctype html>
 <html>
 <head>
-<title>about</title>
+<title>About</title>
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    </style>
 </head>
 <body>
-    <h1><center>ABOUT US!</center></h1>
-<p>It is what you want to achieve when you set out to craft an amazing About Us page that captivates your readers, gets them hooked in to your ideas and still tells them the nitty gritty about who you are.
+    <div class="about-section">
+  <h1>About Us Page</h1>
+        <p>It is what you want to achieve when you set out to craft an amazing About Us page that captivates your readers, gets them hooked in to your ideas and still tells them the nitty gritty about who you are.
 
     Check out the page and you will see the first part devoted to mass social proof – stats of how many people are using the service. Then you get high definition photography of the people and the offices followed by 36 words that make up the sharpest concept copy you will ever read.
     
     Scroll down further, however, and you see something interesting. They let other brands tell you what Tumblr is. They have sound bites from the New York Times, Forbes and Business Week telling you what Tumblr does and why it does it so well. The chosen quotes are short but they paint you a full picture of the service.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="logo.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Akanksha</h2>
+        <p class="title">CEO & Founder</p>
+        <p>I am who I am</p>
+        <p>akankshakarra@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+    </div>
+</div>
+
 </body>
 </html>
